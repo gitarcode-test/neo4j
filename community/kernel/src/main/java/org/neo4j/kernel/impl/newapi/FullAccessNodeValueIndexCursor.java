@@ -23,9 +23,7 @@ class FullAccessNodeValueIndexCursor extends DefaultNodeValueIndexCursor {
     FullAccessNodeValueIndexCursor(CursorPool<DefaultNodeValueIndexCursor> pool) {
         super(pool, null, false);
     }
-
     @Override
-    protected final boolean allowsAll() {
-        return true;
-    }
+    protected final boolean allowsAll() { return true; }
+        
 }

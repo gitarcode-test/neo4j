@@ -35,11 +35,9 @@ public class BoltV51Wire extends BoltV50Wire {
     public BoltV51Wire() {
         super(BoltProtocolV51.VERSION);
     }
-
     @Override
-    public boolean supportsLogonMessage() {
-        return true;
-    }
+    public boolean supportsLogonMessage() { return true; }
+        
 
     @Override
     public String getUserAgent() {
