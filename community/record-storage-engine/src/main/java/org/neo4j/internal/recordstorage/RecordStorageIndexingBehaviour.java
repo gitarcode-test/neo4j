@@ -34,11 +34,9 @@ public class RecordStorageIndexingBehaviour implements StorageEngineIndexingBeha
     public boolean useNodeIdsInRelationshipTokenIndex() {
         return false;
     }
-
     @Override
-    public boolean requireCoordinationLocks() {
-        return true;
-    }
+    public boolean requireCoordinationLocks() { return true; }
+        
 
     @Override
     public int nodesPerPage() {
