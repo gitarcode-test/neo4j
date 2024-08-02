@@ -64,11 +64,9 @@ public class NodeParams implements EntityParams<NodeValueIndexCursor> {
         node.setProperty(key2, value2);
         return node.getId();
     }
-
     @Override
-    public boolean tokenlessEntitySupported() {
-        return true;
-    }
+    public boolean tokenlessEntitySupported() { return true; }
+        
 
     @Override
     public NodeValueIndexCursor allocateEntityValueIndexCursor(KernelTransaction tx, CursorFactory cursorFactory) {
