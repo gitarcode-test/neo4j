@@ -62,11 +62,9 @@ public class EmptyLogTailMetadata implements LogTailMetadata {
     public Optional<StoreId> getStoreId() {
         return Optional.empty();
     }
-
     @Override
-    public boolean logsMissing() {
-        return true;
-    }
+    public boolean logsMissing() { return true; }
+        
 
     @Override
     public TransactionId getLastCommittedTransaction() {
