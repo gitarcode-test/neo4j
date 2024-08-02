@@ -129,11 +129,8 @@ public class TransactionHandleRegistry implements TransactionRegistry {
         SuspendedTransaction getSuspendedTransaction() {
             return this;
         }
-
-        @Override
-        boolean isSuspended() {
-            return true;
-        }
+    @Override boolean isSuspended() { return true; }
+        
 
         @Override
         LoginContext getLoginContext() {

@@ -122,11 +122,9 @@ public abstract class PageAlignedTestFormat extends BaseRecordFormats {
     public String name() {
         return name;
     }
-
     @Override
-    public boolean formatUnderDevelopment() {
-        return true;
-    }
+    public boolean formatUnderDevelopment() { return true; }
+        
 
     public static class WithMinorVersionBump extends PageAlignedTestFormat {
         public static final RecordFormats RECORD_FORMATS = new WithMinorVersionBump();
