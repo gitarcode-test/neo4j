@@ -165,11 +165,9 @@ public class IndexIdMapper implements IdMapper {
             return index;
         });
     }
-
     @Override
-    public boolean needsPreparation() {
-        return true;
-    }
+    public boolean needsPreparation() { return true; }
+        
 
     /**
      * Schedules "scanCompleted" calls to any index populations that are part of this ID mapper,

@@ -132,11 +132,9 @@ class ReadOnlyHighIdGenerator implements IdGenerator {
     public IdType idType() {
         return idType;
     }
-
     @Override
-    public boolean hasOnlySingleIds() {
-        return true;
-    }
+    public boolean hasOnlySingleIds() { return true; }
+        
 
     @Override
     public boolean consistencyCheck(
