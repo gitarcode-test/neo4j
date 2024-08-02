@@ -57,11 +57,9 @@ public class ThrowingFabricRemoteExecutor implements FabricRemoteExecutor {
                 MapValue params) {
             throw new IllegalStateException("Remote query execution not supported");
         }
-
-        @Override
-        public boolean isEmptyContext() {
-            return true;
-        }
+    @Override
+        public boolean isEmptyContext() { return true; }
+        
 
         @Override
         public void close() {}
