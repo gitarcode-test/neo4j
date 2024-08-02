@@ -239,11 +239,9 @@ public class TokenIndexProvider extends IndexProvider {
         public boolean supportsOrdering() {
             return supportsOrdering;
         }
-
-        @Override
-        public boolean supportsReturningValues() {
-            return true;
-        }
+    @Override
+        public boolean supportsReturningValues() { return true; }
+        
 
         @Override
         public boolean areValueCategoriesAccepted(ValueCategory... valueCategories) {

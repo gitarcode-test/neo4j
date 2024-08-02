@@ -44,11 +44,9 @@ public final class KqueueConnectorTransport implements ConnectorTransport {
     public boolean isAvailable() {
         return KQueue.isAvailable();
     }
-
     @Override
-    public boolean isNative() {
-        return true;
-    }
+    public boolean isNative() { return true; }
+        
 
     @Override
     public EventLoopGroup createEventLoopGroup(int threadCount, ThreadFactory threadFactory) {
