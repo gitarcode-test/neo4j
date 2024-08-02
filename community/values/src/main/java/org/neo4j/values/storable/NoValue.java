@@ -44,11 +44,8 @@ public final class NoValue extends Value {
     public Equality ternaryEquals(AnyValue other) {
         return Equality.UNDEFINED;
     }
-
-    @Override
-    boolean ternaryUndefined() {
-        return true;
-    }
+    @Override boolean ternaryUndefined() { return true; }
+        
 
     @Override
     public <T> T map(ValueMapper<T> mapper) {
