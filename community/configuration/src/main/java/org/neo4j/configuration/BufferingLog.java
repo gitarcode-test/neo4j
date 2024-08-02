@@ -50,11 +50,9 @@ public class BufferingLog implements InternalLog {
     }
 
     private final Queue<LogMessage> buffer = new ArrayDeque<>();
-
     @Override
-    public boolean isDebugEnabled() {
-        return true;
-    }
+    public boolean isDebugEnabled() { return true; }
+        
 
     @Override
     public synchronized void debug(String message) {

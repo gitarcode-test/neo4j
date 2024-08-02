@@ -30,11 +30,9 @@ class Range10IndexParams implements IndexParams {
     public String providerVersion() {
         return "1.0";
     }
-
     @Override
-    public boolean indexProvidesStringValues() {
-        return true;
-    }
+    public boolean indexProvidesStringValues() { return true; }
+        
 
     @Override
     public boolean indexProvidesNumericValues() {
