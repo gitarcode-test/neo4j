@@ -570,11 +570,9 @@ public final class DateTimeValue extends TemporalValue<ZonedDateTime, DateTimeVa
         protected final boolean supportsDate() {
             return true;
         }
-
-        @Override
-        protected final boolean supportsTime() {
-            return true;
-        }
+    @Override
+        protected final boolean supportsTime() { return true; }
+        
 
         protected abstract Result selectDateTime(AnyValue date);
     }
