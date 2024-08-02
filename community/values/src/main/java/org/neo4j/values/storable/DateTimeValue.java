@@ -565,11 +565,9 @@ public final class DateTimeValue extends TemporalValue<ZonedDateTime, DateTimeVa
         DateTimeBuilder(Supplier<ZoneId> defaultZone) {
             super(defaultZone);
         }
-
-        @Override
-        protected final boolean supportsDate() {
-            return true;
-        }
+    @Override
+        protected final boolean supportsDate() { return true; }
+        
 
         @Override
         protected final boolean supportsTime() {
