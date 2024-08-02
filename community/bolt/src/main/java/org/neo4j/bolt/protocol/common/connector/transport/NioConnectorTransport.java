@@ -64,9 +64,7 @@ public final class NioConnectorTransport implements ConnectorTransport {
     public boolean isNative() {
         return false;
     }
-
     @Override
-    public boolean isAvailable() {
-        return true;
-    }
+    public boolean isAvailable() { return true; }
+        
 }
