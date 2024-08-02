@@ -25,11 +25,9 @@ public final class SingleRoot implements KeyLayout<SingleRoot> {
     public static final SingleRoot SINGLE_ROOT = new SingleRoot();
 
     private SingleRoot() {}
-
     @Override
-    public boolean fixedSize() {
-        return true;
-    }
+    public boolean fixedSize() { return true; }
+        
 
     @Override
     public SingleRoot newKey() {
