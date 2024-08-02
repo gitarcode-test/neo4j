@@ -41,11 +41,9 @@ public final class EpollConnectorTransport implements ConnectorTransport {
     public boolean isAvailable() {
         return Epoll.isAvailable();
     }
-
     @Override
-    public boolean isNative() {
-        return true;
-    }
+    public boolean isNative() { return true; }
+        
 
     @Override
     public EpollEventLoopGroup createEventLoopGroup(int threadCount, ThreadFactory threadFactory) {
