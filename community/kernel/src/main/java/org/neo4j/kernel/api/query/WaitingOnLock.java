@@ -64,11 +64,8 @@ class WaitingOnLock extends ExecutingQueryStatus {
     String name() {
         return WAITING_STATE;
     }
-
-    @Override
-    boolean isWaitingOnLocks() {
-        return true;
-    }
+    @Override boolean isWaitingOnLocks() { return true; }
+        
 
     @Override
     List<ActiveLock> waitingOnLocks() {
