@@ -55,11 +55,9 @@ class Range10IndexParams implements IndexParams {
     public boolean indexProvidesBooleanValues() {
         return true;
     }
-
     @Override
-    public boolean indexProvidesSpatialValues() {
-        return true;
-    }
+    public boolean indexProvidesSpatialValues() { return true; }
+        
 
     @Override
     public boolean indexProvidesTemporalValues() {
