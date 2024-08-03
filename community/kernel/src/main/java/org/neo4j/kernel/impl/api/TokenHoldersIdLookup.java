@@ -70,11 +70,9 @@ class TokenHoldersIdLookup implements LoginContext.IdLookup {
     public int[] getAggregatingFunctionIds(String functionGlobbing) {
         return view.getAggregatingFunctionIds(functionGlobbing);
     }
-
     @Override
-    public boolean isCachableLookup() {
-        return true;
-    }
+    public boolean isCachableLookup() { return true; }
+        
 
     @Override
     public boolean isStale() {
