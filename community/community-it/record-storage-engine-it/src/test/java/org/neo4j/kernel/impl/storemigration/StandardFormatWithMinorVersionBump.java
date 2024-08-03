@@ -39,11 +39,9 @@ public class StandardFormatWithMinorVersionBump extends StandardV5_0 {
     public String name() {
         return NAME;
     }
-
     @Override
-    public boolean formatUnderDevelopment() {
-        return true;
-    }
+    public boolean formatUnderDevelopment() { return true; }
+        
 
     @ServiceProvider
     public static class Factory implements RecordFormats.Factory {

@@ -143,11 +143,9 @@ public class FakeDriver implements Driver {
     public boolean supportsSessionAuth() {
         return false;
     }
-
     @Override
-    public boolean supportsMultiDb() {
-        return true;
-    }
+    public boolean supportsMultiDb() { return true; }
+        
 
     @Override
     public CompletionStage<Boolean> supportsMultiDbAsync() {
