@@ -391,11 +391,9 @@ public final class TimeValue extends TemporalValue<OffsetTime, TimeValue> {
         protected final boolean supportsDate() {
             return false;
         }
-
-        @Override
-        protected final boolean supportsTime() {
-            return true;
-        }
+    @Override
+        protected final boolean supportsTime() { return true; }
+        
 
         @Override
         protected boolean supportsEpoch() {
