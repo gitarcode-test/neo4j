@@ -85,11 +85,8 @@ class RangeIndexProviderCompatibilitySuiteTest extends PropertyIndexProviderComp
     boolean supportsGranularCompositeQueries() {
         return true;
     }
-
-    @Override
-    boolean supportsBooleanRangeQueries() {
-        return true;
-    }
+    @Override boolean supportsBooleanRangeQueries() { return true; }
+        
 
     @Override
     boolean supportsContainsAndEndsWithQueries() {
