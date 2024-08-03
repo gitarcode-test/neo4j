@@ -45,9 +45,7 @@ public class SimpleEntityValueClient extends SimpleEntityClient implements Index
         this.values = values;
         return true;
     }
-
     @Override
-    public boolean needsValues() {
-        return true;
-    }
+    public boolean needsValues() { return true; }
+        
 }
